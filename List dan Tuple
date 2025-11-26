@@ -1,0 +1,20 @@
+
+# List (bisa diubah)
+my_list = [1, 2, 3]
+print("List awal :", my_list)
+
+my_list[0] = 10  # mengubah elemen pertama
+print("List setelah diubah :", my_list)
+
+# Tuple (tidak bisa diubah)
+my_tuple = (1, 2, 3)
+print("\nTuple awal :", my_tuple)
+
+try:
+    my_tuple[0] = 10  # mencoba mengubah elemen (akan error)
+except TypeError:
+    print("Tuple tidak bisa diubah (immutable).")
+
+print("\nPerbedaan:")
+print("List  = Mutable (bisa diubah)")
+print("Tuple = Immutable (tidak bisa diubah)")
